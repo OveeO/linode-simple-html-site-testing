@@ -1,0 +1,63 @@
+html {
+    color:#fff;
+    text-align: center;
+    font-family: roboto, arial;
+
+}
+
+body {
+    margin:0;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+    font-weight: 500;
+    margin-top:0;
+}
+
+h1 {
+    font-size:48px;
+}
+
+a {
+    color:#fff;
+    opacity: .8;
+    transition: 0.2s ease;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+.full-screen-container{
+    background: url('./images/abstract_tech-bg.jpg') no-repeat center;
+    background-size:cover;
+    display: grid;
+    width: calc(100vw - 80px);
+    height:calc(100vh - 80px);
+    grid-template-rows: 1fr 1fr 1fr 30px;
+    grid-template-columns: 1fr;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    overflow: hidden;
+}
+
+.full-screen-container > div {
+    height:fit-content;
+}
+
+.full-screen-container > div:first-child > span {
+    font-size:18px;
+    font-weight: 300;
+}
+
+.full-screen-container > div:nth-child(2) > div {
+    padding:20px;
+    height:80%;
+}
+
+.full-screen-container img {
+    max-width: 120px;
+
+}
